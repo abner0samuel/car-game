@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#score{
+    top: 0;
+    font-size: 2em;
+    width: 20vh;
+    height: 6vh;
+    border: 1px solid white;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#pause{
+    width: 10cap;
+    height: 5cap;
+    border-radius: 15px 0px 15px 0px;
+    background-color: red;
+    font-size: 1.5em;
+}
+#start{
+    width: 10cap;
+    height: 5cap;
+    border-radius: 0px 15px 0px 15px;
+    background-color:yellow;
+    font-size: 1.5em;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+}
+.ground{
+    /* display: none; */
+    background-image: url("download.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+
+
+}
+.img{
+    width: 15vh;
+ 
+}
+.road{
+    position: fixed;
+    height: 100vh;
+    width:700px;
+    margin: 0;
+    background-color:rgb(22, 21, 21);
+    justify-content: space-between;
+    border-left: 4px dashed white;
+    border-right: 4px dashed white;
+    top: 0;
+    left: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.road_line{
+    background-color:white;
+    width: 10px;
+    height:100px;
+    margin-top: 15px;
+}
+#enemy1{
+    position: absolute;
+    top: 0;
+    left: 25rem;
+    border-radius: 30%;
+    animation: enemy1 infinite linear 1s;
+}
+@keyframes enemy1{
+    0%{
+        top:-0vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+#player{
+    position: absolute;
+    left: 35rem;
+    top: 70vh;
+    border-radius: 30%;
+  
+}
+@keyframes player {
+    0% {
+        top: 70vh;
+    }
+
+    100% {
+        top: -45vh;
+    }
+}
+#enemy2{
+    position: absolute;
+    top: 0;
+    left: -0.4rem;
+    border-radius: 30%;
+    animation: enemy2 infinite linear 5s;
+}
+@keyframes enemy2{
+    0%{
+        transform: translateY(-10rem);
+    }
+    
+    100%{
+        transform: translateY(35rem);
+    }
+}
+
+#enemy3{
+    position: absolute;
+    top: 0;
+    left: 150px;
+    border-radius: 30%;
+    animation: enemy3 infinite linear 3s;
+}
+@keyframes enemy3{
+    0%{
+        transform: translateY(-10rem);
+    }
+    
+    100%{
+        transform: translateY(35rem);
+    }
+}
